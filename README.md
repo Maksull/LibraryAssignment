@@ -58,3 +58,24 @@ The example:
 ```
 nant -buildfile:build.xml build
 ```
+
+## Images
+NUnit tests:\
+![Tests](screenshots/LibraryAssignmentTests.png) \
+Main menu: \
+![Main menu](screenshots/LibraryAssignmentMainMenu.png) \
+Choose file type and enter file name: \
+![Choose file type](screenshots/LibraryAssignmentChooseFileType.png)
+![Choose file](screenshots/LibraryAssignmentChooseFile.png) \
+Read records from a file: \
+![Read records from file](screenshots/LibraryAssignmentReadRecords.png) \
+Create a record: \
+![Create record](screenshots/LibraryAssignmentCreateRecord.png) \
+Update a record: \
+![Update record](screenshots/LibraryAssignmentUpdateRecord.png) \
+Delete a record: \
+![Delete record](screenshots/LibraryAssignmentDeleteRecord.png) 
+
+
+
+

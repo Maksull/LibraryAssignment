@@ -6,6 +6,7 @@
     <Price>37000</Price>
   </Car>
   <Car>
+    <Date>15.05.2010</Date>
     <BrandName>BMW X5</BrandName>
     <Price>45000</Price>
   </Car>
@@ -20,8 +21,8 @@
     <Price>1</Price>
   </Car>
   <Car>
-    <Date>03.03.1111</Date>
-    <BrandName>poq</BrandName>
-    <Price>444</Price>
+    <Date>01.01.2022</Date>
+    <BrandName>new</BrandName>
+    <Price>123</Price>
   </Car>
 </Document>

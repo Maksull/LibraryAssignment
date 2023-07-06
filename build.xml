@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="LibraryAssignment" default="build">
+
+  <!-- Properties -->
+  <property name="solution.dir" value="C:\Users\Maksym\source\repos\LibraryAssignment" />
+  <property name="build.dir" value="${solution.dir}\build" />
+  <property name="test.dir" value="${solution.dir}\LibraryAssignment.Tests" />
+  <property name="nunit.console" value="C:\Users\Maksym\source\repos\LibraryAssignment\LibraryAssignment.Tests\bin\Debug\net7.0\testhost.exe" />
+
+  <!-- Targets -->
+  <target name="clean">
+    <delete dir="${build.dir}" />
+  </target>
+
+  <target name="restore">
+    <exec program="dotnet" workingdir="${solution.dir}">
+      <arg value="restore" />
+    </exec>
+  </target>
+
+  <target name="build" depends="restore">
+    <exec program="dotnet" workingdir="${solution.dir}">
+      <arg value="build" />
+      <arg value="-c:Release" />
+    </exec>
+  </target>
+
+  <target name="test" depends="build">
+    <exec program="${nunit.console}" workingdir="${test.dir}">
+      <arg value="${test.dir}\bin\Release\net7.0\LibraryAssignment.Tests.dll" />
+    </exec>
+  </target>
+
+  <target name="default" depends="test" />
+
+</project>
